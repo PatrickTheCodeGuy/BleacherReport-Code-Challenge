@@ -3,3 +3,10 @@
   height: auto;
   position: relative;
 }
+.log {
+  display: flex;
+  margin: -26px 46.5%;
+}
+.luklog {
+  margin: 20px 44%;
+}

@@ -8,9 +8,27 @@ class App extends Component {
     super();
     this.state = {
       // Letters in music alphabet for mapping
-      keys: ["C", "D", "E", "F", "G", "A", "B"]
+      keys: ["C", "D", "E", "F", "G", "A", "B"],
+      pressed: []
     };
   }
+  // Adds functionality to keys
+  // when pressed so that an array
+  // of up to 5 letters will be stored
+  addPressed = letter => {
+    console.log(letter);
+    console.log("this is len of pressed ", this.state.pressed.length);
+    if (this.state.pressed.length > 4) {
+      this.setState({
+        pressed: [letter]
+      });
+    } else {
+      this.setState({
+        pressed: [...this.state.pressed, letter]
+      });
+    }
+  };
+
   render() {
     return (
       <div className="App">
@@ -30,7 +48,16 @@ class App extends Component {
           <BlackKeyComponent />
         </div>
 
-        <PianoContainer pianoKeys={this.state.keys} />
+        <PianoContainer
+          addPressed={this.addPressed}
+          pianoKeys={this.state.keys}
+        />
+        <h3 className="luklog">Last Used Keys </h3>
+        <div className="log">
+          {this.state.pressed.map(pressed => (
+            <h3>{pressed}</h3>
+          ))}
+        </div>
       </div>
     );
   }

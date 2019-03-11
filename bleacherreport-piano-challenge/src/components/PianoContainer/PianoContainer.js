@@ -13,10 +13,14 @@ class PianoContainer extends Component {
     };
   }
   render() {
+    console.log(this.props);
     return (
       <div className="PianoContainer">
         {this.props.pianoKeys.map(letter => (
-          <WhiteKeyComponent letter={letter} />
+          <WhiteKeyComponent
+            letter={letter}
+            addPressed={this.props.addPressed}
+          />
         ))}
       </div>
     );
