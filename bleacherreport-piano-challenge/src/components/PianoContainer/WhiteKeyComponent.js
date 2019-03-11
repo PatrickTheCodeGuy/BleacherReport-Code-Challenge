@@ -5,7 +5,7 @@ class WhiteKeyComponent extends Component {
   render() {
     return (
       <div className="WhiteKeyComponent">
-        <h1>{this.props.letter}</h1>
+        <h1 className="key-letter">{this.props.letter}</h1>
       </div>
     );
   }
