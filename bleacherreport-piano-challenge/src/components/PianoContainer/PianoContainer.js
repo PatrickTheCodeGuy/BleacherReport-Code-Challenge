@@ -14,8 +14,8 @@ class PianoContainer extends Component {
   render() {
     return (
       <div className="PianoContainer">
-        {this.props.pianoKeys.map(key => (
-          <WhiteKeyComponent key={key} />
+        {this.props.pianoKeys.map(letter => (
+          <WhiteKeyComponent letter={letter} />
         ))}
       </div>
     );
