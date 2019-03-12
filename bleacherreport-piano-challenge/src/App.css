@@ -10,3 +10,25 @@
 .luklog {
   margin: 20px 44%;
 }
+.text-area {
+  display: flex;
+
+  margin: 80px 0 0 38%;
+}
+.textbox {
+  width: 200px;
+  height: 24px;
+}
+.play-button {
+  background: white;
+  border: 1px solid black;
+  width: 50px;
+  height: 30px;
+}
+.play-button:hover {
+  background: rgb(219, 219, 219);
+  border: 1px solid black;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}

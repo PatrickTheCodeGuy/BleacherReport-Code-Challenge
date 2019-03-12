@@ -7,6 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      notes: "",
       // Letters in music alphabet for mapping
       keys: ["C", "D", "E", "F", "G", "A", "B"],
       // Array holding the log of pressed keys
@@ -23,6 +24,16 @@ class App extends Component {
       }
     };
   }
+  // Handles input of text string
+  handleChange = event => {
+    event.preventDefault();
+    // Automatically uppercases to match notes
+    let upperCase = event.target.value.toUpperCase();
+    this.setState({
+      [event.target.name]: upperCase
+    });
+  };
+
   // Adds functionality to keys
   // when pressed so that an array
   // of up to 5 letters will be stored
@@ -50,6 +61,49 @@ class App extends Component {
           clicked: { [letter]: false }
         });
       }, 700);
+    }
+  };
+
+  // On click func for playing notes in text box
+  playNotes = () => {
+    let notes = Array.from(this.state.notes);
+    let counter = 0;
+    for (let i = 0; i < notes.length; i++) {
+      if (
+        notes[i] === "A" ||
+        notes[i] === "B" ||
+        notes[i] === "C" ||
+        notes[i] === "D" ||
+        notes[i] === "E" ||
+        notes[i] === "F" ||
+        notes[i] === "G"
+      ) {
+        let noteUsed = notes[i];
+
+        // Two setTimeouts are needed because of how fast the for loop is, it only would do the last index. so by adding a counter (for the index we are COUNTING (aka letters between A-G) then multiply that by a second, we get each individ key lighting up now)
+        setTimeout(() => {
+          if (this.state.pressed.length > 4) {
+            this.setState({
+              pressed: [noteUsed],
+              clicked: { [noteUsed]: true }
+            });
+          } else {
+            this.setState({
+              pressed: [...this.state.pressed, noteUsed],
+              clicked: { [noteUsed]: true }
+            });
+          }
+        }, counter * 1000);
+
+        setTimeout(() => {
+          this.setState({
+            clicked: { [noteUsed]: false }
+          });
+        }, (counter + 1) * 1000);
+
+        // add one to counter because letter was between A-G
+        counter++;
+      }
     }
   };
 
@@ -87,6 +141,17 @@ class App extends Component {
           {this.state.pressed.map(pressed => (
             <h3>{pressed}</h3>
           ))}
+        </div>
+        <div className="text-area">
+          <textarea
+            onChange={this.handleChange}
+            name="notes"
+            placeholder="Add some notes here. . ."
+            className="textbox"
+          />
+          <button onClick={() => this.playNotes()} className="play-button">
+            ▶
+          </button>
         </div>
       </div>
     );
