@@ -5,11 +5,102 @@
   position: relative;
   z-index: 0;
 }
-.WhiteKeyComponent {
+.WhiteKeyComponentA {
   border: 1px solid black;
   width: 5%;
   height: 300px;
   background: white;
+  position: relative;
+}
+.WhiteKeyComponentB {
+  border: 1px solid black;
+  width: 5%;
+  height: 300px;
+  background: white;
+  position: relative;
+}
+.WhiteKeyComponentC {
+  border: 1px solid black;
+  width: 5%;
+  height: 300px;
+  background: white;
+  position: relative;
+}
+.WhiteKeyComponentD {
+  border: 1px solid black;
+  width: 5%;
+  height: 300px;
+  background: white;
+  position: relative;
+}
+.WhiteKeyComponentE {
+  border: 1px solid black;
+  width: 5%;
+  height: 300px;
+  background: white;
+  position: relative;
+}
+.WhiteKeyComponentF {
+  border: 1px solid black;
+  width: 5%;
+  height: 300px;
+  background: white;
+  position: relative;
+}
+.WhiteKeyComponentG {
+  border: 1px solid black;
+  width: 5%;
+  height: 300px;
+  background: white;
+  position: relative;
+}
+.WhiteKeyComponentA.active {
+  border: 1px solid rgb(139, 0, 253);
+  width: 5%;
+  height: 300px;
+  background: rgb(248, 186, 184);
+  position: relative;
+}
+.WhiteKeyComponentB.active {
+  border: 1px solid rgb(139, 0, 253);
+  width: 5%;
+  height: 300px;
+  background: rgb(248, 186, 184);
+  position: relative;
+}
+.WhiteKeyComponentC.active {
+  border: 1px solid rgb(139, 0, 253);
+  width: 5%;
+  height: 300px;
+  background: rgb(248, 186, 184);
+  position: relative;
+}
+.WhiteKeyComponentD.active {
+  border: 1px solid rgb(139, 0, 253);
+  width: 5%;
+  height: 300px;
+  background: rgb(248, 186, 184);
+  position: relative;
+}
+.WhiteKeyComponentE.active {
+  border: 1px solid rgb(139, 0, 253);
+  width: 5%;
+  height: 300px;
+  background: rgb(248, 186, 184);
+  position: relative;
+}
+.WhiteKeyComponentF.active {
+  border: 1px solid rgb(139, 0, 253);
+  width: 5%;
+  height: 300px;
+  background: rgb(248, 186, 184);
+  position: relative;
+}
+.WhiteKeyComponentG.active {
+  border: 1px solid rgb(139, 0, 253);
+  width: 5%;
+  height: 300px;
+  background: rgb(248, 186, 184);
   position: relative;
 }
 .BlackKeyContainer {
@@ -57,7 +148,31 @@
 
   z-index: 1;
 }
-.WhiteKeyComponent:hover {
+.WhiteKeyComponentA:hover {
+  background: gainsboro;
+  cursor: pointer;
+}
+.WhiteKeyComponentB:hover {
+  background: gainsboro;
+  cursor: pointer;
+}
+.WhiteKeyComponentC:hover {
+  background: gainsboro;
+  cursor: pointer;
+}
+.WhiteKeyComponentD:hover {
+  background: gainsboro;
+  cursor: pointer;
+}
+.WhiteKeyComponentE:hover {
+  background: gainsboro;
+  cursor: pointer;
+}
+.WhiteKeyComponentF:hover {
+  background: gainsboro;
+  cursor: pointer;
+}
+.WhiteKeyComponentG:hover {
   background: gainsboro;
   cursor: pointer;
 }
@@ -84,6 +199,104 @@
     width: 8%;
     height: 300px;
     background: white;
+    position: relative;
+  }
+  .WhiteKeyComponentA {
+    border: 1px solid black;
+    width: 8%;
+    height: 300px;
+    background: white;
+    position: relative;
+  }
+  .WhiteKeyComponentB {
+    border: 1px solid black;
+    width: 8%;
+    height: 300px;
+    background: white;
+    position: relative;
+  }
+  .WhiteKeyComponentC {
+    border: 1px solid black;
+    width: 8%;
+    height: 300px;
+    background: white;
+    position: relative;
+  }
+  .WhiteKeyComponentD {
+    border: 1px solid black;
+    width: 8%;
+    height: 300px;
+    background: white;
+    position: relative;
+  }
+  .WhiteKeyComponentE {
+    border: 1px solid black;
+    width: 8%;
+    height: 300px;
+    background: white;
+    position: relative;
+  }
+  .WhiteKeyComponentF {
+    border: 1px solid black;
+    width: 8%;
+    height: 300px;
+    background: white;
+    position: relative;
+  }
+  .WhiteKeyComponentG {
+    border: 1px solid black;
+    width: 8%;
+    height: 300px;
+    background: white;
+    position: relative;
+  }
+  .WhiteKeyComponentA.active {
+    border: 1px solid rgb(139, 0, 253);
+    width: 8%;
+    height: 300px;
+    background: rgb(248, 186, 184);
+    position: relative;
+  }
+  .WhiteKeyComponentB.active {
+    border: 1px solid rgb(139, 0, 253);
+    width: 8%;
+    height: 300px;
+    background: rgb(248, 186, 184);
+    position: relative;
+  }
+  .WhiteKeyComponentC.active {
+    border: 1px solid rgb(139, 0, 253);
+    width: 8%;
+    height: 300px;
+    background: rgb(248, 186, 184);
+    position: relative;
+  }
+  .WhiteKeyComponentD.active {
+    border: 1px solid rgb(139, 0, 253);
+    width: 8%;
+    height: 300px;
+    background: rgb(248, 186, 184);
+    position: relative;
+  }
+  .WhiteKeyComponentE.active {
+    border: 1px solid rgb(139, 0, 253);
+    width: 8%;
+    height: 300px;
+    background: rgb(248, 186, 184);
+    position: relative;
+  }
+  .WhiteKeyComponentF.active {
+    border: 1px solid rgb(139, 0, 253);
+    width: 8%;
+    height: 300px;
+    background: rgb(248, 186, 184);
+    position: relative;
+  }
+  .WhiteKeyComponentG.active {
+    border: 1px solid rgb(139, 0, 253);
+    width: 8%;
+    height: 300px;
+    background: rgb(248, 186, 184);
     position: relative;
   }
   .black-key-1 {
